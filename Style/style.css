@@ -1,0 +1,866 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+p {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+html {
+    width: 100dvw;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #d9d9d9;
+    width: 100dvw;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #161616;
+    height: 80px;
+    display: flex;
+    width: 100%;
+    box-shadow: 0px 0px 30px #000000;
+    position: relative;
+}
+
+nav {
+    display: inline-block;
+    width: calc(100% - 110px);
+    padding: 15px 20px;
+}
+
+.burger {
+    width: 40px;
+}
+
+.burger:hover {
+    cursor: pointer;
+}
+
+.bi {
+   color: #d9d9d9;
+   font-size: 2.3rem;
+}
+
+.nav {
+    display: none;
+    position: absolute;
+    width: 100px;
+    top: 80px;
+    left: 2px;
+    background-color: #161616;
+    box-shadow: 0px 0px 30px #000000;
+    transition: .6s;
+}
+
+.a-nav {
+    text-align: center;
+    height: 35px;
+    border: 1px solid #000000;
+    padding-top: 9px;
+}
+
+.a-nav:hover {
+    background-color: #1a1a1a;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #d9d9d9;
+    font-size: 20px;
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    transition: .7s;
+}
+
+nav a:hover {
+    color: #337418;
+}
+
+.logo {
+    display: flex;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Section capa */
+
+section.capa {
+    box-shadow: 0px 0px 20px #000000bd;
+}
+
+
+.img-capa {
+    background-image: url(../img-home/Lancer-capa-cell.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 580px;
+}
+
+.efeito {
+    height: 100%;
+    width: 100%;
+    padding-top: 10px;
+    background-color: #00000080;
+}
+
+.efeito > h1 {
+    font-size: 2.4rem;
+    color: #21FF00;
+    margin-left: 15px;
+    margin-bottom: 5px;
+    font-family: "Anta", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.efeito > p {
+    font-size: 1.12rem;
+    color: #d9d9d9;
+    margin-left: 15px;
+    margin-right: 10px;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+section.body {
+    padding-top: 25px;
+}
+
+.conteiner > h2 {
+    text-align: center;
+    font-family: "Anta", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2.1rem;
+    color: #337418;
+    margin-bottom: 20px;
+}
+
+.artigos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 20px;
+    row-gap: 20px;
+    width: 100%;
+}
+
+.artigo {
+    width: calc(50% - 30px);
+    height: 200px;
+    background-color: #d9d9d9;
+    box-shadow: 0px 0px 15px #00000054;
+}
+
+.artigo > .title-artigo > p.tema {
+    text-align: center;
+    font-size: 1.4rem;
+    color: #337418;
+    padding: 2px 5px;
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.img-artigo {
+    text-align: center;
+    height: 150px;
+}
+
+footer {
+    padding: 15px 5px;
+    margin-top: 30px;
+    background-color: #161616;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    width: 100%;
+}
+
+.footer > div > img {
+    width: 160px;
+    margin: 10px;
+}
+
+.box-form {
+    width: 300px;
+    box-shadow: 0px 0px 30px #000000a8;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.box-form > .h2-form {
+    text-align: center;
+}
+
+.box-form > .h2-form > h2 {
+    color: #21FF00;
+    font-family: "Anta", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    margin-bottom: 15px
+}
+
+.box-form > form > .div-input {
+    height: 40px;
+    width: calc(100% - 30px);
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.box-form > form > .div-input-cor {
+    height: 40px;
+    width: calc(100% - 30px);
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+}
+
+.box-form > form > .div-input > label {
+    position: absolute;
+    bottom: 3px;
+    left: 5px;
+    color: #d9d9d9;
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+    transition: .6;
+    pointer-events: none;
+}
+
+.label {
+    transition: .6s;
+}
+
+.box-form > form > .div-input > input {
+    height: 25px;
+    width: 100%;
+    outline: none;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    color: #d9d9d9;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #21FF00;
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.2rem;
+}
+
+.input:focus ~ .label, .input:valid ~ .label {
+    top: 0px;
+    left: 0px;
+    font-size: .9rem;
+    color: #337418;
+    transition: .6s;
+}
+
+.div-input-cor > input {
+    width: 50px;
+    height: 30px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+.div-input-cor > label {
+    padding: 7px;
+    color: #d9d9d9;
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+}
+
+.enviar {
+    display: block;
+    width: 150px;
+    height: 35px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: #21FF00;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.2rem;
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+@media screen and (min-width: 315px) and (max-width: 389px) {
+    header{
+        height: 50px;
+    }
+
+    nav {
+        padding: 5px 10px;
+    }
+
+    .nav {
+        top: 50px;
+    }
+
+    .efeito > p {
+        font-size: .98rem;
+    }
+
+    .conteiner > h2 {
+        font-size: 1.7rem;
+    }
+
+    .artigos {
+        column-gap: 10px;
+        row-gap: 15px;
+    }
+
+    .artigo {
+        width: calc(50% - 15px);
+        height: 180px;
+        box-shadow: 0px 0px 10px #00000054;
+    }
+
+    .artigo > .title-artigo > p.tema {
+        font-size: 1rem;
+    }
+
+    .img-artigo {
+        height: 140px;
+    }
+    
+    .lancer-evo-x > .img-artigo > img {
+        width: 150px;
+        margin-top: 15px;
+    }
+
+    .img-artigo > img {
+        width: 130px;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 599px) {
+
+    .burger {
+        display: none;
+    }
+
+    nav {
+        padding: 20px 10px;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: static;
+        width: 100%;
+        box-shadow: none;
+    }
+
+    .a-nav {
+        text-align: center;
+        padding: 10px;
+        border: 0px;
+        padding-top: 9px;
+    }
+
+    .artigos {
+        column-gap: 10px;
+        row-gap: 20px;
+    }
+
+    .artigo {
+        width: calc(33.33% - 15px);
+        height: 200px;
+        background-color: #d9d9d9;
+        box-shadow: 0px 0px 10px #00000054;
+    }
+
+    .lancer-evo-x > .img-artigo > img {
+        width: 150px;
+        margin-top: 15px;
+    }
+
+    .img-artigo > img {
+        width: 130px;
+    }
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 767px) {
+    .burger {
+        display: none;
+    }
+
+    nav {
+        padding: 20px 10px;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: static;
+        width: 350px;
+        box-shadow: none;
+    }
+
+    .a-nav {
+        text-align: center;
+        padding: 10px;
+        border: 0px;
+        padding-top: 9px;
+    }
+
+    .img-capa {
+        background-image: url(../img-home/Lancer-capa-tabletes.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 600px;
+    }
+
+    .efeito {
+        height: 100%;
+        width: 100%;
+        padding-top: 10px;
+        background-image: linear-gradient(to right, #00000094 25%, #00000000 80%);
+    }
+
+    .efeito > p {
+        width: 60%;
+        font-size: 1.12rem;
+        color: #d9d9d9;
+        margin-left: 15px;
+        margin-right: 10px;
+        font-family: "Libre Baskerville", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .burger {
+        display: none;
+    }
+
+    nav {
+        padding: 20px 10px;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: static;
+        width: 350px;
+        box-shadow: none;
+    }
+
+    .a-nav {
+        text-align: center;
+        padding: 10px;
+        border: 0px;
+        padding-top: 9px;
+    }
+
+    .img-capa {
+        background-image: url(../img-home/Lancer-capa-tabletes.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 690px;
+    }
+
+    .efeito {
+        height: 100%;
+        width: 100%;
+        padding-top: 10px;
+        background-image: linear-gradient(to right, #00000094 25%, #00000000 80%);
+    }
+
+    .efeito > p {
+        width: 70%;
+        font-size: 1.5rem;
+        color: #d9d9d9;
+        margin-left: 15px;
+        margin-right: 10px;
+        font-family: "Libre Baskerville", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .artigos {
+        column-gap: 10px;
+        row-gap: 20px;
+    }
+
+    .artigo {
+        width: calc(33.33% - 15px);
+        height: 200px;
+        background-color: #d9d9d9;
+        box-shadow: 0px 0px 10px #00000054;
+    }
+
+    .lancer-evo-x > .img-artigo > img {
+        width: 150px;
+        margin-top: 15px;
+    }
+
+    .img-artigo > img {
+        width: 130px;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+
+    header {
+        height: 100px;
+    }
+
+    .burger {
+        display: none;
+    }
+
+    nav {
+        padding: 30px 46px;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: static;
+        width: 450px;
+        box-shadow: none;
+    }
+
+    .a-nav {
+        text-align: center;
+        padding: 10px;
+        border: 0px;
+        padding-top: 9px;
+    }
+
+    .logo {
+        width: 150px;
+        margin-right: 60px;
+    }
+
+    .logo > img {
+        height: 70px;
+    }
+
+    .img-capa {
+        background-image: url(../img-home/Lancer\ -\ capa.jpg);
+        background-size: cover;
+        background-position: center;
+        height: calc(100dvh - 100px);
+    }
+
+    .efeito {
+        height: 100%;
+        width: 100%;
+        padding-top: 30px;
+        padding-left: 60px;
+        background-image: linear-gradient(to right, #161616da 20%, #00000094 40%, #00000000 80%);
+    }
+
+    .efeito > p {
+        width: 60%;
+        font-size: 1.4rem;
+        color: #d9d9d9;
+        margin-left: 15px;
+        margin-right: 10px;
+        font-family: "Libre Baskerville", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    section.body {
+        margin: auto;
+    }
+
+    .conteiner > h2 {
+        font-size: 3rem;
+    }
+
+    .artigos {
+        column-gap: 20px;
+        row-gap: 20px;
+    }
+
+    .artigo {
+        width: calc(20% - 48px);
+        height: 200px;
+        background-color: #d9d9d9;
+        box-shadow: 0px 0px 10px #00000054;
+    }
+
+    .footer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: space-around;
+        max-width: 610px;
+        margin: auto;
+    }
+
+    .footer > div > img {
+        width: 250px;
+        margin: 10px;
+    }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1439px) {
+
+    header {
+        height: 100px;
+    }
+
+    .burger {
+        display: none;
+    }
+
+    nav {
+        padding: 30px 46px;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: static;
+        width: 450px;
+        box-shadow: none;
+    }
+
+    .a-nav {
+        text-align: center;
+        padding: 10px;
+        border: 0px;
+        padding-top: 9px;
+    }
+
+    .logo {
+        width: 150px;
+        margin-right: 60px;
+    }
+
+    .logo > img {
+        height: 70px;
+    }
+
+    .img-capa {
+        background-image: url(../img-home/Lancer\ -\ capa.jpg);
+        background-size: cover;
+        background-position: center;
+        height: calc(100dvh - 100px);
+    }
+
+    .efeito {
+        height: 100%;
+        width: 100%;
+        padding-top: 30px;
+        padding-left: 60px;
+        background-image: linear-gradient(to right, #161616da 20%, #00000094 40%, #00000000 80%);
+    }
+
+    .efeito > p {
+        width: 50%;
+        font-size: 1.4rem;
+        color: #d9d9d9;
+        margin-left: 15px;
+        margin-right: 10px;
+        font-family: "Libre Baskerville", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    section.body {
+        margin: auto;
+    }
+
+    .conteiner > h2 {
+        font-size: 3rem;
+    }
+
+    .artigos {
+        column-gap: 20px;
+        row-gap: 20px;
+    }
+
+    .img-artigo {
+        height: 160px;
+        margin-top: 30px;
+    }
+
+    .artigo {
+        width: calc(20% - 48px);
+        height: 250px;
+        background-color: #d9d9d9;
+        box-shadow: 0px 0px 10px #00000054;
+    }
+
+    .footer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: space-around;
+        max-width: 610px;
+        margin: auto;
+    }
+
+    .footer > div > img {
+        width: 250px;
+        margin: 10px;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+
+    header {
+        height: 100px;
+    }
+
+    .burger {
+        display: none;
+    }
+
+    nav {
+        padding: 30px 46px;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: static;
+        width: 450px;
+        box-shadow: none;
+    }
+
+    .a-nav {
+        text-align: center;
+        padding: 10px;
+        border: 0px;
+        padding-top: 9px;
+    }
+
+    .logo {
+        width: 150px;
+        margin-right: 60px;
+    }
+
+    .logo > img {
+        height: 70px;
+    }
+
+    .img-capa {
+        background-image: url(../img-home/Lancer\ -\ capa.jpg);
+        background-size: cover;
+        background-position: center;
+        height: calc(100dvh - 100px);
+    }
+
+    .efeito {
+        height: 100%;
+        width: 100%;
+        padding-top: 30px;
+        padding-left: 60px;
+        background-image: linear-gradient(to right, #161616da 20%, #00000094 40%, #00000000 80%);
+    }
+
+    .efeito > p {
+        max-width: 600px;
+        font-size: 1.4rem;
+        color: #d9d9d9;
+        margin-left: 15px;
+        margin-right: 10px;
+        font-family: "Libre Baskerville", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    section.body {
+        margin: auto;
+    }
+
+    .conteiner > h2 {
+        font-size: 4rem;
+        margin-top: 40px;
+        margin-bottom: 45px;
+    }
+
+    .artigos {
+        column-gap: 40px;
+        row-gap: 30px;
+        max-width: 1500px;
+        margin: auto;
+    }
+
+    .img-artigo {
+        margin-top: 10px;
+        height: 190px;
+    }
+
+    .lancer-evo-x > .img-artigo {
+        margin-top: 30px;
+        height: 170px;
+    }
+
+    .img-artigo > img {
+        width: 170px;
+    }
+
+    .artigo {
+        width: calc(20% - 80px);
+        height: 270px;
+        background-color: #d9d9d9;
+        box-shadow: 0px 0px 10px #00000054;
+    }
+
+    .footer {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: space-around;
+        max-width: 610px;
+        margin: auto;
+    }
+
+    .footer > div > img {
+        width: 250px;
+        margin: 10px;
+    }
+
+}
