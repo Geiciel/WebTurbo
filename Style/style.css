@@ -157,11 +157,22 @@ section.body {
     width: 100%;
 }
 
-.artigo {
+.link-artigo {
+    text-decoration: none;
     width: calc(50% - 30px);
     height: 200px;
     background-color: #d9d9d9;
     box-shadow: 0px 0px 15px #00000054;
+}
+
+.artigo {
+    height: 200px;
+}
+
+.link-artigo:hover {
+    cursor: pointer;
+    transition: .6s;
+    transform: scale(1.06);
 }
 
 .artigo > .title-artigo > p.tema {
@@ -344,10 +355,14 @@ footer {
         row-gap: 15px;
     }
 
-    .artigo {
+    .link-artigo {
         width: calc(50% - 15px);
         height: 180px;
         box-shadow: 0px 0px 10px #00000054;
+    }
+
+    .artigo {
+        height: 180px;
     }
 
     .artigo > .title-artigo > p.tema {
@@ -399,11 +414,15 @@ footer {
         row-gap: 20px;
     }
 
-    .artigo {
+    .link-artigo {
         width: calc(33.33% - 15px);
         height: 200px;
         background-color: #d9d9d9;
         box-shadow: 0px 0px 10px #00000054;
+    }
+
+    .artigo {
+        height: 200px;
     }
 
     .lancer-evo-x > .img-artigo > img {
@@ -523,11 +542,15 @@ footer {
         row-gap: 20px;
     }
 
-    .artigo {
+    .link-artigo {
         width: calc(33.33% - 15px);
         height: 200px;
         background-color: #d9d9d9;
         box-shadow: 0px 0px 10px #00000054;
+    }
+
+    .artigo {
+        height: 200px;
     }
 
     .lancer-evo-x > .img-artigo > img {
@@ -617,12 +640,16 @@ footer {
         column-gap: 20px;
         row-gap: 20px;
     }
-
-    .artigo {
+    
+    .link-artigo {
         width: calc(20% - 48px);
         height: 200px;
         background-color: #d9d9d9;
         box-shadow: 0px 0px 10px #00000054;
+    }
+
+    .artigo {
+        height: 200px;
     }
 
     .footer {
@@ -723,11 +750,15 @@ footer {
         margin-top: 30px;
     }
 
-    .artigo {
+    .link-artigo {
         width: calc(20% - 48px);
         height: 250px;
         background-color: #d9d9d9;
         box-shadow: 0px 0px 10px #00000054;
+    }
+
+    .artigo {
+        height: 250px;
     }
 
     .footer {
@@ -842,11 +873,15 @@ footer {
         width: 170px;
     }
 
-    .artigo {
+    .link-artigo {
         width: calc(20% - 80px);
         height: 270px;
         background-color: #d9d9d9;
         box-shadow: 0px 0px 10px #00000054;
+    }
+
+    .artigo {
+        height: 270px;
     }
 
     .footer {
