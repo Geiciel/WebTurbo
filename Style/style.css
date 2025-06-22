@@ -163,6 +163,7 @@ section.body {
     height: 200px;
     background-color: #d9d9d9;
     box-shadow: 0px 0px 15px #00000054;
+    transition: .7s;
 }
 
 .artigo {
