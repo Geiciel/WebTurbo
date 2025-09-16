@@ -193,7 +193,7 @@ section.body {
 }
 
 footer {
-    padding: 15px 5px;
+    padding: 50px 5px;
     margin-top: 30px;
     background-color: #161616;
 }
@@ -335,7 +335,22 @@ footer {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
+/*
+.footer-direitos {
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 10px;
+}
 
+.text-direitos {
+    display: inline-block;
+    padding: 0px 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .9rem;
+    border-top: solid 1px #21FF00 ;
+}
+*/
 @media screen and (min-width: 315px) and (max-width: 389px) {
     header{
         height: 50px;
