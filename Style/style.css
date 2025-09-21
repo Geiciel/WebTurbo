@@ -239,16 +239,11 @@ footer {
     position: relative;
 }
 
-.box-form > form > .div-input-cor {
-    height: 40px;
+.div_color_car {
     width: calc(100% - 30px);
     margin: auto;
     margin-top: 20px;
     margin-bottom: 5px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5px;
-    justify-content: center;
 }
 
 .box-form > form > .div-input > label {
@@ -295,7 +290,55 @@ footer {
     transition: .6s;
 }
 
-.div-input-cor > input {
+.text_opcoes {
+    margin-left: 13px;
+    margin-top: 20px;
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    color: #ffffff;
+}
+
+#car_color {
+    height: 40px;
+    width: 200px;
+    margin-top: 10px;
+    margin-left: 13px;
+    color: #ffffff;
+    background-color: #161616;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    box-shadow: 0px 0px 16px #0000009d;
+    outline: none;
+}
+
+#escolher_cor, #color_aleatorio {
+    width: 20px;
+    height: 20px;
+    color: #21FF00;
+}
+
+.escolher_color, .aleatorio_color {
+    display: flex;
+    height: 30px;
+}
+
+#escolher_cor:checked {
+    background-color: #000000;
+    color: #21FF00;
+}
+
+#escolher_cor:hover {
+    cursor: pointer;
+}
+
+.div_color_car > input {
     width: 50px;
     height: 30px;
     outline: none;
@@ -303,14 +346,33 @@ footer {
     background-color: transparent;
 }
 
-.div-input-cor > label {
-    padding: 7px;
+.div_color_car > label {
+    margin-top: 5px;
+    margin-left: 5px;
     color: #d9d9d9;
     font-family: "League Spartan", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    font-size: 1.2rem;
+    font-size: 1rem;
+}
+
+#div_color {
+    display: none;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: left;
+}
+
+.div_color_car > .div_color_car_1 > label {
+    margin-top: 5px;
+    margin-left: 5px;
+    color: #d9d9d9;
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
 }
 
 .enviar {
@@ -328,6 +390,12 @@ footer {
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
+}
+
+.enviar:hover {
+    transform: scale(1.1);
+    transition: 0.7s;
+    cursor: pointer;
 }
 
 .retorno {

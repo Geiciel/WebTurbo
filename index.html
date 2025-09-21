@@ -161,16 +161,35 @@
                         <label for="id-car-marca" class="label">Marca do carro</label>
                     </div>
                     <div class="div-input">
-                        <input type="text" name="car-name" id="id-car-name" required class="input">
-                        <label for="id-car-name" class="label">Nome do carro</label>
+                        <input type="text" name="car-modelo" id="id-car-name" required class="input">
+                        <label for="id-car-name" class="label">Modelo do carro</label>
                     </div>
                     <div class="div-input">
                         <input type="text" name="adicional" id="id-adicional" required class="input">
                         <label for="id-adicional" class="label">Adicional</label>
                     </div>
                     <div class="div-input-cor">
-                        <label for="id-color-car">Cor do carro</label>
-                        <input type="color" name="color-car" id="id-color-car" value="none" >
+                        <p class="text_opcoes">Escolha uma opção</p>
+                        <select name="car_color" id="car_color" onchange="selecionado()">
+                            <option value="nao_determinado">Pode ser qualquer cor</option>
+                            <option value="determinado">Escolher cor do carro</option>
+                        </select>
+                        <!--
+                            <div id="div_escolher" class="div_color_car">
+                                <div class="escolher_color div_color_car_1">
+                                    <input type="radio" name="color" id="escolher_cor" onclick="selecionado()" value="escolheu" required>
+                                    <label for="escolher_cor" id="label_escolher">Escolher cor do carro </label>
+                                </div>
+                                <div class="aleatorio_color div_color_car_1">
+                                    <input type="radio" name="color" id="color_aleatorio" onclick="selecionado()" value="nao_escolheu" checked>
+                                    <label for="color_aleatorio">Qualquer cor</label>
+                                </div>
+                            </div>
+                            -->
+                            <div id="div_color" class="div_color_car">
+                                <label for="id-color-car">Cor do carro</label>
+                                <input type="color" name="color-car" id="id-color-car" value="none" >
+                            </div>
                     </div>
                     <button type="submit" class="enviar" data-button>Enviar</button>
                 </form>

@@ -1,3 +1,5 @@
+const { createElement } = require("react");
+
 document.addEventListener("DOMContentLoaded", function() {
     const burger = document.getElementById("burger");
     const nav = document.querySelector(".nav");
@@ -10,3 +12,18 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     };
 });
+
+function selecionado() {
+    let select = window.document.getElementById('car_color')
+    let div_color = window.document.getElementById('div_color')
+
+    if (select.value === 'determinado') {
+        div_color.style.display = 'flex'
+        div_color.name = 'color_the_car'
+    } else if (select.value === 'nao_determinado') {
+        div_color.style.display = 'none'
+        div_color.name = 'null'
+    } else {
+        alert('Deu algum erro ' + select)
+    }
+}
