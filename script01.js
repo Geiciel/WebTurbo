@@ -17,10 +17,10 @@ function selecionado() {
     let select = window.document.getElementById('car_color')
     let div_color = window.document.getElementById('div_color')
 
-    if (select.value === 'determinado') {
+    if (select.value === 'cor_determinada') {
         div_color.style.display = 'flex'
         div_color.name = 'color_the_car'
-    } else if (select.value === 'nao_determinado') {
+    } else if (select.value === 'cor_nao_determinada') {
         div_color.style.display = 'none'
         div_color.name = 'null'
     } else {

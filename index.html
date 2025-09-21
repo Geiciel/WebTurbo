@@ -151,41 +151,32 @@
                 <div class="h2-form">
                     <h2>Escolha o próximo carro <br> a ser estacionado</h2>
                 </div>
-                <form action="https://formsubmit.co/ajax/automotiveplastictcc@gmail.com" method="POST" data-form>
+                <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="a5d97c90-20c0-49da-a297-33ed4b79768c" />
+                    <input type="hidden" name="subject" value="Web3Forms - Fala meu parceiro, chegou nova mensagem para você!" />
+                    <input type="hidden" name="from_name" value="WebTurbo"/>
                     <div class="div-input">
-                        <input type="text" name="insta" id="id-insta" required class="input">
+                        <input type="text" name="Instagram" id="id-insta" required class="input">
                         <label for="id-insta" class="label">Seu @ do insta</label>
                     </div>
                     <div class="div-input">
-                        <input type="text" name="car-marca" id="id-car-marca" required class="input">
+                        <input type="text" name="Marca_do_carro" id="id-car-marca" required class="input">
                         <label for="id-car-marca" class="label">Marca do carro</label>
                     </div>
                     <div class="div-input">
-                        <input type="text" name="car-modelo" id="id-car-name" required class="input">
+                        <input type="text" name="Modelo_do_carro" id="id-car-name" required class="input">
                         <label for="id-car-name" class="label">Modelo do carro</label>
                     </div>
                     <div class="div-input">
-                        <input type="text" name="adicional" id="id-adicional" required class="input">
+                        <input type="text" name="Adicional" id="id-adicional" required class="input">
                         <label for="id-adicional" class="label">Adicional</label>
                     </div>
                     <div class="div-input-cor">
                         <p class="text_opcoes">Escolha uma opção</p>
                         <select name="car_color" id="car_color" onchange="selecionado()">
-                            <option value="nao_determinado">Pode ser qualquer cor</option>
-                            <option value="determinado">Escolher cor do carro</option>
+                            <option value="cor_nao_determinada">Pode ser qualquer cor</option>
+                            <option value="cor_determinada">Escolher cor do carro</option>
                         </select>
-                        <!--
-                            <div id="div_escolher" class="div_color_car">
-                                <div class="escolher_color div_color_car_1">
-                                    <input type="radio" name="color" id="escolher_cor" onclick="selecionado()" value="escolheu" required>
-                                    <label for="escolher_cor" id="label_escolher">Escolher cor do carro </label>
-                                </div>
-                                <div class="aleatorio_color div_color_car_1">
-                                    <input type="radio" name="color" id="color_aleatorio" onclick="selecionado()" value="nao_escolheu" checked>
-                                    <label for="color_aleatorio">Qualquer cor</label>
-                                </div>
-                            </div>
-                            -->
                             <div id="div_color" class="div_color_car">
                                 <label for="id-color-car">Cor do carro</label>
                                 <input type="color" name="color-car" id="id-color-car" value="none" >
