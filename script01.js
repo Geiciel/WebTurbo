@@ -24,6 +24,6 @@ function selecionado() {
         div_color.style.display = 'none'
         div_color.name = 'null'
     } else {
-        alert('Deu algum erro ' + select)
+        console.log('Deu algum erro ' + select)
     }
 }
