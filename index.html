@@ -30,14 +30,14 @@
 <body>
     <header>
         <nav>
-            <div class="burger" id="burger" onclick="">
-                <i class="bi bi-list"></i>
+            <div class="burger" id="burger" onclick="display()">
+                <i class="bi bi-list" id="icon"></i>
             </div>
             <div class="nav">
-                <div class="a-nav"><a href="#" class="atual">Home</a></div>
-                <div class="a-nav"><a href="#carros">Carros</a></div>
-                <div class="a-nav"><a href="#">Sobre</a></div>
-                <div class="a-nav"><a href="#footer">Contato</a></div>
+                <a href="#" class="atual"><div class="a-nav">Home</div></a>
+                <a href="#carros"><div class="a-nav">Carros</div></a>
+                <a href="#"><div class="a-nav">Sobre</div></a>
+                <a href="#footer"><div class="a-nav">Contato</div></a>
             </div>
         </nav>
         <div class="logo">
@@ -60,7 +60,7 @@
             <div class="artigos">
                 <a href="index/lancer.html" class="link-artigo">
                     <div class="artigo lancer-evo-x">
-                        <div class="img-artigo"><img src="img-pg-cars/Lancer - celular.png" alt="" width="165px"></div>
+                        <div class="img-artigo"><img src="img-home/Lancer - celular.png" alt="" width="165px"></div>
                         <div class="title-artigo">
                             <p class="tema">Lancer Evo X</p>
                         </div>
@@ -153,7 +153,7 @@
                 </div>
                 <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
                     <input type="hidden" name="access_key" value="bab51678-ac3c-40f5-9fb2-96f76a18754e" />
-                    <input type="hidden" name="subject" value="Web3Forms - Fala meu parceiro, chegou nova mensagem para você!" />
+                    <input type="hidden" name="subject" value="Web3Forms - Fala meu parceiro, chegou nova mensagem para você!"/>
                     <input type="hidden" name="from_name" value="WebTurbo"/>
                     <div class="div-input">
                         <input type="text" name="Instagram" id="id-insta" required class="input">
@@ -186,11 +186,10 @@
                 </form>
             </div>
         </div>
-       <!--  <div class="footer-direitos">
+        <div class="footer-direitos">
             <p class="text-direitos">© 2024 Web Turbo. Todos os direitos reservados.</p>
-        </div> -->
+        </div>
       </footer>
-      <script src="submit.js"></script>
       <script src="script01.js"></script>
 </body>
 </html>
